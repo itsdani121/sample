@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slider_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp"
+    tools:context=".sliderFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/slider_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/review_design" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/maps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:text="The Awesome Sliding Up Panel"
+        android:textSize="16sp" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
